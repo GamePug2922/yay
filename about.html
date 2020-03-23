@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zemoda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleabout.css">
+        <link rel="shortcut icon" href="earth.png">
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="nav-logo" >
+                <a href="home.html"><img src="earth.png "></a>
+            </div>
+            <div class="nav-links" id="mobileMenu">
+                <ul>
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="about.html"><li>About us</li></a>
+                    <a href="joinus.html"><li>Join Us</li></a>
+                    <a href="https://forms.gle/nesEXoMTkpXi6g1m8"><li>Apply for staff</li></a>
+                </ul>
+            </div>
+            <img src="menu-icon.png" class="menu-icon" onclick="showMenu()">
+        </div>
+        <div class="main">
+            <h1>WELCOME TO ZEMODA COMMUNITY</h1>
+            <p>Zemoda Community is a small growing discord. We play most games <br>especially roblox, minecraft and rocket league. Come join us and hangout, <br>and make relationships with other members. <br><br><i> - mango cat</i> </p>
+        </div>
+        <script>
+            function showMenu(){
+                var toggle = document.getElementById("mobileMenu")
+                if(toggle.style.height == "0px"){
+                    toggle.style.height = "200px";
+                }
+                else{
+                    toggle.style.height = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>

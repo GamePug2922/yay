@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zemoda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylehome.css">
+        <link rel="shortcut icon" href="earth.png">
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                 <a href="home.html"><img src="earth.png "></a>
+            </div>
+            <div class="nav-links" id="mobileMenu">
+                <ul>
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="about.html"><li>About us</li></a>
+                    <a href="joinus.html"><li>Join Us</li></a>
+                    <a href="https://forms.gle/nesEXoMTkpXi6g1m8"><li>Apply for staff</li></a>
+                </ul>
+            </div>
+            <img src="menu-icon.png" class="menu-icon" onclick="showMenu()">
+        </div>
+        <div class="hero">
+            <h1>ZEMODA, <br>A SMALL GAMING COMMUNITY</h1>
+            <div class="btn">
+                <span></span><span></span><span></span><span></span>
+                <a href="https://discord.gg/fzhxzU3" target="_blank">Join Us!</a>
+
+            </div>
+        </div>
+        <script>
+            function showMenu(){
+                var toggle = document.getElementById("mobileMenu")
+                if(toggle.style.height == "0px"){
+                    toggle.style.height = "200px";
+                }
+                else{
+                    toggle.style.height = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>

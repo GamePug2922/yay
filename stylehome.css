@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #ffffff;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.nav-bar{
+    display: flex;
+    padding: 2% 2%;
+}
+.nav-logo img{
+    width: 95px;
+    margin-top: -17;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+.nav-links ul a{
+    color: #a503fc;
+    text-decoration: none;
+    font-size: 18px;
+}
+.hero{
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+
+
+}
+h1{
+    font-size: 60px;
+    color: transparent;
+    -webkit-text-stroke: 1px #a503fc;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    margin-bottom: 4%;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.btn{
+    width: 160px;
+    height: 50px;
+    border: 1px solid #a503fc;
+    color: #a503fc;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.btn a{
+    font-size: 20px;
+    padding-top: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #a503fc;
+    line-height: 50px;
+}
+span{
+    width: 80px;
+    height: 80px;
+    top: 80px;
+    position: absolute;
+    background: #a503fc;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 1s;
+}
+span:nth-child(1){
+    left: -20px;
+    transition-delay: .1s;
+}
+span:nth-child(2){
+    left: 30px;
+    transition-delay: .3s;
+}
+span:nth-child(3){
+    left: 80px;
+    transition-delay: .5s;
+}
+span:nth-child(4){
+    left: 125px;
+    transition-delay: .7s;
+}
+.btn:hover span{
+    top: -10px;
+}
+.btn:hover a{
+    color: #ffffff;
+    transition-delay: .5s;
+}
+.menu-icon{
+    width: 26px;
+    display: none;
+}
+@media (max-width: 700px){
+    .hero h1{
+        font-size: 26px;
+        margin-bottom: 10%;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul{
+        padding: 20px 5px;
+    }
+    .nav-links{
+        margin-top: 30px;
+    }
+    .nav-logo{
+        margin-top: -5px;
+        margin-left: -5px;
+    }
+    .menu-icon{
+        display: block;
+        top: 20px;
+        right: 35px;
+        position: absolute;
+        cursor: pointer;
+    }
+    #mobileMenu{
+        height: 0;
+        overflow: hidden;
+        transition: 1s;
+    }
+
+}
